@@ -93,6 +93,14 @@ disabled = 0
 index = windows
 ```
 
+4. Restart
+
+To verify that the Splunk Universal Forwarder was functioning correctly with the updated configuration settings:
+
+```cmd
+"C:\Program Files\SplunkUniversalForwarder\bin\splunk.exe" restart
+```
+
 ---
 
 # Verifying Forwarder Status
