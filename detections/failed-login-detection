@@ -1,0 +1,27 @@
+## Failed Login Detection
+
+The following Splunk query was used to identify failed Windows login attempts:
+
+```spl
+index=windows EventCode=4625
+```
+
+This detection can help identify:
+- Brute force attempts
+- Failed authentication activity
+- Suspicious login behavior
+
+---
+
+## Sysmon Process Creation Monitoring
+
+The following query was used to monitor Sysmon process creation events:
+
+```spl
+index=windows source="WinEventLog:Microsoft-Windows-Sysmon/Operational"
+```
+
+This helps monitor:
+- Process execution
+- Suspicious command activity
+- System behavior visibility
